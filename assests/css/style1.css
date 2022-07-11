@@ -56,25 +56,17 @@ body {
   color: #414b3b;
   font-family: "Raleway", sans-serif;
   display: flex;
-  margin-right: 250px;
   margin-top: 200px;
   font-size: xx-large;
-  width: 600px;
-  height: 1000px;
 }
 
 #quote h4 {
   color: #414b3b;
   font-family: cursive;
-  margin-right: 250px;
   font-size: large;
-  margin-top: -925px;
 }
 
 .shop-btn {
-  margin-right: 950px;
-  margin-left: -620px;
-  margin-top: 370px;
   border: 0 solid white;
   border-radius: 20px;
   cursor: pointer;
@@ -87,7 +79,10 @@ body {
   font-size: large;
   transition: all 0.5s;
   animation: text-color 3s;
+  margin-left: -420px;
+  margin-top: 325px;
 }
+
 .shop-btn:hover {
   background-color: #414b3b;
   color: white;
