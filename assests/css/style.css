@@ -1,0 +1,61 @@
+.body {
+  background-color: #414b3b;
+}
+
+.shop {
+  background-color: #fff9f3be;
+  width: 200px;
+  height: 100px;
+  margin: 10px auto;
+  margin-bottom: 40%;
+  margin-top: 5%;
+  padding: 20%;
+  padding-bottom: 30%;
+  border-radius: 25px;
+}
+
+.box {
+  width: 700px;
+  height: 300px;
+  margin-left: -250px;
+  margin-right: -250px;
+  margin-bottom: -200px;
+  margin-top: -200px;
+  text-align: center;
+  font-family: cursive;
+  font-size: larger;
+}
+
+.shop-btn {
+  /* margin: 20px; */
+  margin-top: 550px;
+  margin-left: 30px;
+  border: 0 solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: large;
+  transition: all 0.5s;
+  animation: text-color 2s;
+}
+.shop-btn:hover {
+  background-color: #414b3b;
+  color: white;
+}
+
+@keyframes text-color {
+  0% {
+    color: white;
+  }
+  50% {
+    color: grey;
+  }
+  100% {
+    color: black;
+  }
+}
