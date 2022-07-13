@@ -37,6 +37,7 @@ body {
 .nav-bar-links li a {
   /* removes the line under the list items */
   text-decoration: none;
+  cursor: pointer;
   color: white;
   display: block;
   padding-top: 15px;
@@ -51,12 +52,19 @@ body {
   color: #ab8742;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
 .container .row1 {
   margin-top: 35px;
   display: flex;
   justify-content: center;
   align-content: center;
   margin-bottom: 10px;
+  height: 700px;
 }
 
 .container h3 {
@@ -76,6 +84,7 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
+  height: 700px;
 }
 
 .container img {
@@ -86,8 +95,16 @@ body {
   margin-top: 125px;
 }
 
+.container .buttons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
 .shop-btn {
+  align-content: center;
   border: 0 solid white;
   border-radius: 20px;
   cursor: pointer;
