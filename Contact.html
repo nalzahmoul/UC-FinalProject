@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Account</title>
+    <script src="./assests/js/script.js"></script>
+    <link rel="stylesheet" href="./assests/css/styleContact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/83628e7e26.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <center>
+      <div class="logo">
+        <img
+          src="./assests/pictures/Project Logo/bloom-logo.jpg"
+          alt="The Bloom Room logo"
+          width="150"
+          height="90"
+        />
+      </div>
+    </center>
+
+    <div class="nav-bar-links">
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./Products.html">Products</a></li>
+          <li><a href="./Contact.html">Contact us</a></li>
+          <li><a href="./Account.html">Account</a></li>
+          <li>
+            <a href="./Cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- About -->
+    <center>
+        <h4 id="container-h4">Store Location</h4>
+      <div class="container-2">
+        <div class="location">
+          <i class="fa-solid fa-location-dot"></i>
+          <h5>6 St, Shuwaikh Industrial 72460</h5>
+        </div>
+        <div class="opening-hours">
+          <i class="fa-solid fa-clock"></i>
+          <h5>9:30AM - 10:30PM</54>
+        </div>
+      </div>
+    </center>
+    <!-- Contact Form  -->
+    <div class="container">
+      <div class="form-box">
+        <h3>Get in touch</h3>
+        <div class="name">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Name" id="name" />
+        </div>
+        <div class="email">
+          <i class="fas fa-envelope"></i>
+          <input type="text" placeholder="Email" id="email" />
+        </div>
+        <div class="message-box">
+          <textarea
+            id="msg"
+            cols="30"
+            rows="10"
+            placeholder="Message..."
+          ></textarea>
+        </div>
+        <div class="btn">
+          <button class="submit-btn" id="submit" onclick="message()">
+            Submit
+          </button>
+        </div>
+        <div class="danger" id="danger">Fields cannot be empty!</div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <ul class="flex-row">
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./Products.html">Products</a></li>
+          <li><a href="./Contact.html">Contact us</a></li>
+          <li><a href="./Account.html">Account</a></li>
+          <li>
+            <a href="./Cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+        <ul class="flex-row">
+          <li>
+            <i class="fa-brands fa-youtube"></i>
+          </li>
+          <li>
+            <i class="fab fa-twitter"></i>
+          </li>
+          <li>
+            <i class="fab fa-instagram"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-whatsapp"></i>
+          </li>
+          <li>
+            <i id="dhl" class="fa-brands fa-dhl"></i>
+          </li>
+        </ul>
+        <p>Copyright &copy; 2022 Alzahmoul</p>
+      </div>
+    </footer>
+  </body>
+</html>

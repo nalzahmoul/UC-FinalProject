@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <title>Home</title>
-    <link rel="stylesheet" href="./assests/css/style1.css" />
+    <script src="./assests/js/script.js"></script>
+    <link rel="stylesheet" href="./assests/css/styleHome.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,17 +26,17 @@
         <ul>
           <li><a href="./Home.html">Home</a></li>
           <li><a href="./Products.html">Products</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Account</a></li>
+          <li><a href="./Contact.html">Contact us</a></li>
+          <li><a href="./Account.html">Account</a></li>
+          <li><a href="./Cart.html"><i class="fas fa-shopping-cart"></i></a></li>
 
         </ul>
       </div>
     </nav>
     <div class="shop">
-      <div id="image">
-        <img
-          src="/assests/pictures/image.jpg"
+      <div>
+        <img id="cover-image" onmouseover="setNewImageCover()" onmouseout="setOldImageCover()"
+          src="./assests/pictures/cover-image.jpeg"
           alt="Flower Bouquet"
           width="450px"
           height="650px"
@@ -47,26 +48,50 @@
           <h4>- Henri Matisse</h4>
         </center>
       </div>
-      <a href="./Products.html"><button type="button" class="shop-btn">Shop Now</button>
+      <a href="./Products.html"><button type="button" class="shop-btn">Shop Now</button></a>
     </div>
+    <center>
+      <h2 id="partition">____________________________________________________________</h2>
+    </center>
+    <center>
+    <div class="container-2">
+      <div>
+        <h4>Sign up for our newsletter!
+        </h4>
+      </div>
+      <div>
+        <h5>And get great offers and all the latest news about The Bloom Room.</h5>
+      </div>
+      <div>
+        <input type="text" placeholder="Email" id="email-2">
+      </div>
+      <div class="btn">
+        <button class="submit-btn" id="submit-2" onclick="messageEmail()">
+          Submit
+        </button>
+      </div>
+      <div class="danger" id="danger-2">Fields cannot be empty!</div>
+    </div>
+    </div>
+  </center>
 
     <!-- Footer -->
     <footer>
-      <div class="container">
+      <div class="footer-container">
         <ul class="flex-row">
-            <li><a href="./Home.html">Home</a></li>
-            <li><a href="./Products.html">Products</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Account</a></li>
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./Products.html">Products</a></li>
+          <li><a href="./Contact.html">Contact us</a></li>
+          <li><a href="./Account.html">Account</a></li>
+          <li><a href="./Cart.html"><i class="fas fa-shopping-cart"></i></a></li>
         </ul>
         <ul class="flex-row">
-          <!-- <li>
+          <li>
             <i class="fa-brands fa-youtube"></i>
           </li>
           <li>
             <i class="fab fa-twitter"></i>
-          </li> -->
+          </li>
           <li>
             <i class="fab fa-instagram"></i>
           </li>
@@ -74,10 +99,10 @@
             <i class="fa-brands fa-whatsapp"></i>
           </li>
           <li>
-            <i class="fa-brands fa-dhl"></i>
+            <i id="dhl" class="fa-brands fa-dhl"></i>
           </li>
         </ul>
-        <p>&copy; 2022 Alzahmoul</p>
+        <p>Copyright &copy; 2022 Alzahmoul</p>
       </div>
     </footer>
   </body>

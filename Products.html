@@ -2,13 +2,18 @@
 <html lang="en">
   <head>
     <title>Products</title>
-    <link rel="stylesheet" href="./assests/css/style2.css" />
+    <script src="./assests/js/script.js"></script>
+    <link rel="stylesheet" href="./assests/css/styleProducts.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/83628e7e26.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <center>
@@ -27,85 +32,161 @@
         <ul>
           <li><a href="./Home.html">Home</a></li>
           <li><a href="./Products.html">Products</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Account</a></li>
+          <li><a href="./Contact.html">Contact us</a></li>
+          <li><a href="./Account.html">Account</a></li>
+          <li>
+            <a href="./Cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </li>
         </ul>
       </div>
     </nav>
-    <div class="container">
-      <!-- ROW 1 -->
-      <div class="row1">
-        <div>
-          <img
-            src="./assests/pictures/Products/Trockenblumen/Trockenblumen.jpeg"
-            alt="Trockenblumen"
-          />
-          <h3>Trockenblumen</h3>
-          <h5>7.50 KD</h5>
-
-        </div>
-        <div>
-          <img
-            src="./assests/pictures/Products/Palm Spear/Palmspear.jpeg"
-            alt="Palm Spear"
-          />
-          <h3>Palm Spear</h3>
-          <h5>8.00 KD</h5>
-        </div>
-        <div>
-          <img
-            src="./assests/pictures/Products/Lagurus/Lagurus.jpeg"
-            alt="Lagurus"
-          />
-          <h3>Lagurus</h3>
-          <h5>9.00 KD</h5>
-        </div>
+    <!-- ROW 1 -->
+    <div class="row1">
+      <div class="card">
+        <img
+          id="Img1"
+          onmouseover="setNewImageONE()"
+          onmouseout="setOldImageONE()"
+          src="./assests/pictures/Products/Trockenblumen/Trockenblumen.jpeg"
+          alt="Trockenblumen"
+        />
+        <h3>Trockenblumen</h3>
+        <h5>7.50 KD</h5>
       </div>
-
-      <!-- Buttons -->
-      <div class="buttons">
-        <div class="shop-btn">
-          
-      <a href="./Home.html"><button type="button" class="shop-btn">View</button>
-        </div>
-        <div>
-          
-      <a href="./Home.html"><button type="button" class="shop-btn">View</button>
-        </div>
-        <div>
-          
-      <a href="./Home.html"><button type="button" class="shop-btn">View</button>
-        </div>
+      <div class="card">
+        <img
+          id="Img2"
+          onmouseover="setNewImageTWO()"
+          onmouseout="setOldImageTWO()"
+          src="./assests/pictures/Products/Palm Spear/Palmspear.jpeg"
+          alt="Palm Spear"
+        />
+        <h3>Palm Spear</h3>
+        <h5>8.00 KD</h5>
       </div>
-
-      <div class="row2">
-        <!-- ROW 2 -->
-        <div>
-          <img
-            src="./assests/pictures/Products/Trockenblumen Bastel Box/Ü_Box_Weiss_2-1025x1536.jpeg"
-            alt="Trockenblumen Box"
-          />
-          <h3>Trockenblumen Box</h3>
-          <h5>18.00 KD</h5>
-        </div>
-        <div>
-          <img
-            src="./assests/pictures/Products/Eukalyptus/Eukalyptus.jpeg"
-            alt="Eukalyptus"
-          />
-          <h3>Eukalyptus</h3>
-          <h5>12.00 KD</h5>
-        </div>
-        <div>
-          <img
-            src="./assests/pictures/Products/DIY_Bastelset/DIY_Bastelset.jpeg"
-            alt="DIY set"
-          />
-          <h3>DIY set</h3>
-          <h5>22.00 KD</h5>
-        </div>
+      <div class="card">
+        <img
+          id="Img3"
+          onmouseover="setNewImageTHREE()"
+          onmouseout="setOldImageTHREE()"
+          src="./assests/pictures/Products/Lagurus/Lagurus.jpeg"
+          alt="Lagurus"
+        />
+        <h3>Lagurus</h3>
+        <h5>9.00 KD</h5>
       </div>
     </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <div id="btn1">
+        <a href="./Home.html"
+          ><button type="button" class="view-btn">Add to cart</button></a
+        >
+      </div>
+
+      <div id="btn2">
+        <a href="./Home.html"
+          ><button type="button" class="view-btn">Add to cart</button></a
+        >
+      </div>
+
+      <div id="btn3">
+        <a href="./Home.html"
+          ><button type="button" class="view-btn">Add to cart</button></a
+        >
+      </div>
+    </div>
+
+    <!-- ROW 2 -->
+    <div class="row2">
+      <div class="card">
+        <img
+          id="Img4"
+          onmouseover="setNewImageFOUR()"
+          onmouseout="setOldImageFOUR()"
+          src="./assests/pictures/Products/Trockenblumen Bastel Box/Ü_Box_Weiss_2-1025x1536.jpeg"
+          alt="Trockenblumen Box"
+        />
+        <h3>Trockenblumen Box</h3>
+        <h5>18.00 KD</h5>
+      </div>
+      <div class="card">
+        <img
+          id="Img5"
+          onmouseover="setNewImageFIVE()"
+          onmouseout="setOldImageFIVE()"
+          src="./assests/pictures/Products/Eukalyptus/Eukalyptus.jpeg"
+          alt="Eukalyptus"
+        />
+        <h3>Eukalyptus</h3>
+        <h5>12.00 KD</h5>
+      </div>
+      <div class="card">
+        <img
+          id="Img6"
+          onmouseover="setNewImageSIX()"
+          onmouseout="setOldImageSIX()"
+          src="./assests/pictures/Products/DIY_Bastelset/DIY_Bastelset.jpeg"
+          alt="DIY set"
+        />
+        <h3>DIY set</h3>
+        <h5>22.00 KD</h5>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <div id="btn4">
+        <a href="./Home.html"
+          ><button type="button" class="view-btn">Add to cart</button></a
+        >
+      </div>
+
+      <div id="btn5">
+        <a href="./Home.html"
+          ><button type="button" class="view-btn">Add to cart</button></a
+        >
+      </div>
+
+      <div id="btn6">
+        <a href="./Home.html"
+          ><button type="button" class="view-btn">Add to cart</button></a
+        >
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <ul class="flex-row">
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./Products.html">Products</a></li>
+          <li><a href="./Contact.html">Contact us</a></li>
+          <li><a href="./Account.html">Account</a></li>
+          <li>
+            <a href="./Cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+        <ul class="flex-row">
+          <li>
+            <i class="fa-brands fa-youtube"></i>
+          </li>
+          <li>
+            <i class="fab fa-twitter"></i>
+          </li>
+          <li>
+            <i class="fab fa-instagram"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-whatsapp"></i>
+          </li>
+          <li>
+            <i id="dhl" class="fa-brands fa-dhl"></i>
+          </li>
+        </ul>
+        <p>Copyright &copy; 2022 Alzahmoul</p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Account</title>
+    <script src="./assests/js/script.js"></script>
+    <link rel="stylesheet" href="./assests/css/SignIn.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/83628e7e26.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <center>
+      <div class="logo">
+        <img
+          src="./assests/pictures/Project Logo/bloom-logo.jpg"
+          alt="The Bloom Room logo"
+          width="150"
+          height="90"
+        />
+      </div>
+    </center>
+
+    <div class="nav-bar-links">
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./Products.html">Products</a></li>
+          <li><a href="./Contact.html">Contact us</a></li>
+          <li><a href="./Account.html">Account</a></li>
+          <li>
+            <a href="./Cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <br />
+    <br />
+    <br />
+    <!-- account page -->
+    <div class="container">
+      <div class="column-1">
+        <img
+          src="./assests/pictures/Products/Trockenblumen/Trockenblumen3.jpeg"
+          alt="Trockenblumen"
+          width="400px"
+          height="600px"
+        />
+      </div>
+
+      <div class="column-2">
+        <div class="login-box">
+          <center>
+            <h3>Sign In</h3>
+          </center>
+          <div class="name">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" id="username" />
+          </div>
+          <div class="password">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password" id="password" />
+          </div>
+          <div class="btn">
+            <button class="login-btn" id="login-btn" onclick="validateLogIn()">
+              Confirm
+            </button>
+          </div>
+
+          <div class="register">
+            <h5>Don't have an account?</h5>
+            <a href="./Account.html"><h5>Sign Up</h5></a>
+          </div>
+          <div class="danger" id="danger">Fields cannot be empty!</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <ul class="flex-row">
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./Products.html">Products</a></li>
+          <li><a href="./Contact.html">Contact us</a></li>
+          <li><a href="./Account.html">Account</a></li>
+          <li>
+            <a href="./Cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+        <ul class="flex-row">
+          <li>
+            <i class="fa-brands fa-youtube"></i>
+          </li>
+          <li>
+            <i class="fab fa-twitter"></i>
+          </li>
+          <li>
+            <i class="fab fa-instagram"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-whatsapp"></i>
+          </li>
+          <li>
+            <i id="dhl" class="fa-brands fa-dhl"></i>
+          </li>
+        </ul>
+        <p>Copyright &copy; 2022 Alzahmoul</p>
+      </div>
+    </footer>
+  </body>
+</html>
