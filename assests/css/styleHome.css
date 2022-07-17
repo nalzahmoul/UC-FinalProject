@@ -1,27 +1,35 @@
-.loader-wrapper {
+.loader-body {
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #242f3f;
+  background-color: #414b3b;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
-.loader {
+
+.spinner {
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  border: 4px solid #fff;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fff9f3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
   animation: loader 2s infinite ease;
 }
-.loader-inner {
+
+.spinner-inner {
   vertical-align: top;
   display: inline-block;
   width: 100%;
-  background-color: #fff;
+  background-color: #fff9f3;
   animation: loader-inner 2s infinite ease-in;
 }
 
@@ -59,6 +67,10 @@
   100% {
     height: 0%;
   }
+}
+
+#a-loader {
+  cursor: default;
 }
 /* Main body */
 body {
