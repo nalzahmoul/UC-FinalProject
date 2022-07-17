@@ -133,7 +133,7 @@ function validateLogIn() {
   } else if (username.value === "" || password.value === "")
     danger.style.display = "block";
   else {
-    alert("Sign Up failed");
+    alert("Sign In failed");
   }
   setTimeout(() => {
     danger.style.display = "none";
