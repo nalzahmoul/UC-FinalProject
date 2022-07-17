@@ -181,7 +181,7 @@ function reserve() {
   let date = document.getElementById("day");
   let time = document.getElementById("time");
 
-  if (username === "" || note === "" || mobile === "") {
+  if (username.value === "" || note.value === "" || mobile.value === "") {
     error.style.display = "block";
   } else {
     alert(
