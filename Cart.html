@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>About us</title>
+    <title>Account</title>
     <script src="./assests/js/script.js"></script>
     <link rel="stylesheet" href="./assests/css/styleCart.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,17 +18,18 @@
   <body>
     <center>
       <div class="logo">
-        <img
-          src="./assests/pictures/Project Logo/bloom-logo.jpg"
-          alt="The Bloom Room logo"
-          width="150"
-          height="90"
-        />
+        <a href="./Home.html">
+          <img
+            src="./assests/pictures/Project Logo/bloom-logo.jpg"
+            alt="The Bloom Room logo"
+            width="150"
+            height="90"
+        /></a>
       </div>
     </center>
 
-    <nav class="nav-bar">
-      <div class="nav-bar-links">
+    <div class="nav-bar-links">
+      <nav class="nav-bar">
         <ul>
           <li><a href="./Home.html">Home</a></li>
           <li><a href="./Products.html">Products</a></li>
@@ -38,82 +39,111 @@
             <a href="./Cart.html"><i class="fas fa-shopping-cart"></i></a>
           </li>
         </ul>
-      </div>
-    </nav>
-    <br />
-    <br />
-    <br />
-    <!-- Slideshow -->
-    <div class="slideshow-container">
-      <!-- images -->
-      <div class="slides">
-        <div class="numbertext">1 / 6</div>
-        <img
-          src="./assests/pictures/Products/Eukalyptus/Eukalyptus3.jpeg"
-          style="width: 100%"
-        />
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="slides">
-        <div class="numbertext">2 / 6</div>
-        <img
-          src="./assests/pictures/Products/Lagurus/Lagurus3.jpeg"
-          style="width: 100%"
-        />
-        <div class="text">Caption Two</div>
-      </div>
-
-      <div class="slides">
-        <div class="numbertext">3 / 6</div>
-        <img
-          src="./assests/pictures/Products/Palm Spear/PalmSpear3.jpeg"
-          style="width: 100%"
-        />
-        <div class="text">Caption Three</div>
-      </div>
-
-      <div class="slides">
-        <div class="numbertext">4 / 6</div>
-        <img
-          src="./assests/pictures/Products/Trockenblumen/Trockenblumen3.jpeg"
-          style="width: 100%"
-        />
-        <div class="text">Caption Four</div>
-      </div>
-
-      <div class="slides">
-        <div class="numbertext">5 / 6</div>
-        <img
-          src="./assests/pictures/Products/DIY_Bastelset/DIY_Bastelset.jpeg"
-          style="width: 100%"
-        />
-        <div class="text">Caption Five</div>
-      </div>
-
-      <div class="slides">
-        <div class="numbertext">6 / 6</div>
-        <img
-          src="./assests/pictures/Products/Trockenblumen Bastel Box/Ü_Box_Weiss_2-1025x1536.jpeg"
-          style="width: 100%"
-        />
-        <div class="text">Caption Six</div>
-      </div>
-
-      <!-- Buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </nav>
     </div>
-    <br />
 
-    <!-- Dots -->
-    <div style="text-align: center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-      <span class="dot" onclick="currentSlide(6)"></span>
+    <!-- Contact Form  -->
+    <div class="container">
+      <div class="form-box">
+        <h3>Items Pickup</h3>
+        <div class="name">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Name" id="namePickup" />
+        </div>
+        <div class="number">
+          <i class="fas fa-envelope"></i>
+          <input type="number" placeholder="Mobile Number" id="mobilePickup" />
+        </div>
+        <div class="date">
+          <i id="date" class="fas fa-calendar"></i>
+          <select type="day" id="day">
+            <option>Sunday</option>
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+          </select>
+        </div>
+        <div class="time">
+          <i id="time" class="fas fa-clock"></i>
+          <select type="time" id="time" value="02:30">
+            <option>9:30AM</option>
+            <option>10:30AM</option>
+            <option>11:30AM</option>
+            <option>12:30AM</option>
+            <option>1:30PM</option>
+            <option>2:30PM</option>
+            <option>3:30PM</option>
+            <option>4:30PM</option>
+            <option>5:30PM</option>
+            <option>6:30PM</option>
+            <option>7:30PM</option>
+            <option>8:30PM</option>
+            <option>9:30PM</option>
+            <option>10:30PM</option>
+          </select>
+        </div>
+        <div class="notes">
+          <textarea id="note" placeholder="Special Notes..."></textarea>
+        </div>
+        <div class="btn">
+          <button class="submit-btn" id="submit" onclick="reserve()">
+            Submit
+          </button>
+        </div>
+        <div class="error" id="error">Fields cannot be empty!</div>
+      </div>
     </div>
+
+    <!-- Location-->
+    <center>
+      <h4 id="container-h4">Store Location</h4>
+      <div class="container-2">
+        <a
+          href="https://www.google.com/maps/place/6+St,+Shuwaikh+Industrial/data=!4m2!3m1!1s0x3fcf854b05d479db:0x77e598453cd7367d?sa=X&ved=2ahUKEwjlla6y___4AhXMXvEDHS42CzUQ8gF6BAgDEAE"
+        >
+          <img
+            id="locationStore"
+            src="./assests/pictures/storeLocation.png"
+            alt="Store Location"
+            onmouseover="PinUpLocation()"
+            onmouseout="PopUpLocation()"
+          />
+        </a>
+      </div>
+    </center>
+    <footer>
+      <div class="footer-container">
+        <ul class="flex-row">
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./Products.html">Products</a></li>
+          <li><a href="./Contact.html">Contact us</a></li>
+          <li><a href="./Account.html">Account</a></li>
+          <li>
+            <a href="./Cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+        <ul class="flex-row">
+          <li>
+            <i class="fa-brands fa-youtube"></i>
+          </li>
+          <li>
+            <i class="fab fa-twitter"></i>
+          </li>
+          <li>
+            <i class="fab fa-instagram"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-whatsapp"></i>
+          </li>
+          <li>
+            <i id="dhl" class="fa-brands fa-dhl"></i>
+          </li>
+        </ul>
+        <p>Copyright &copy; 2022 Alzahmoul</p>
+      </div>
+    </footer>
   </body>
 </html>

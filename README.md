@@ -2,16 +2,15 @@
 
 <!-- accept cookies pop up -->
 
-<!-- Account form
-https://youtu.be/vOXGuNVRGpA
-
-Sign in https://youtu.be/gyXSKhjZfgU, Use the input type ="password" to make password hidden
-Registration Form using only HTML and CSS || Sign up Page Design Tutorial : https://youtu.be/Pcrd_ObbScs
--->
+<!-- search box -->
 
 <!-- shopping cart
 https://youtu.be/YeFzkC2awTM
 -->
 <!-- checkout page -->
 
-<!-- preloader -->
+<!-- preloader
+
+https://youtu.be/fJ5Tmkvzgpk
+https://youtu.be/Kb8PG8b-dek nice :)
+ -->

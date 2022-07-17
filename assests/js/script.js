@@ -8,6 +8,17 @@ function setOldImageCover() {
   document.getElementById("cover-image").src =
     "./assests/pictures/cover-image.jpeg";
 }
+// Location
+function PinUpLocation() {
+  locationStore;
+  document.getElementById("locationStore").src =
+    ".//assests/pictures/storeLocation-2.png";
+}
+
+function PopUpLocation() {
+  document.getElementById("locationStore").src =
+    "./assests/pictures/storeLocation.png";
+}
 
 // Products
 // Product 1
@@ -129,19 +140,24 @@ function validateLogIn() {
   }, 2000);
 
   username.value = "";
-  pass.value = "";
+  password.value = "";
 }
 
 function validateRegister() {
-  let username = document.getElementById("username-2").value;
-  let pass = document.getElementById("password-2").value;
-  let mobile = document.getElementById("mobile").value;
-  let email = document.getElementById("email-3").value;
+  let username = document.getElementById("username-2");
+  let pass = document.getElementById("password-2");
+  let mobile = document.getElementById("mobile");
+  let email = document.getElementById("email-3");
 
-  if (username === "" || pass === "" || mobile === "" || email === "") {
+  if (
+    username.value === "" ||
+    pass.value === "" ||
+    mobile.value === "" ||
+    email.value === ""
+  ) {
     danger.style.display = "block";
   } else {
-    alert(`Hello ${username}, you are signed up sucessfully!`);
+    alert(`Hello ${username.value}, you are signed up sucessfully!`);
   }
   setTimeout(() => {
     danger.style.display = "none";
@@ -149,4 +165,34 @@ function validateRegister() {
 
   username.value = "";
   pass.value = "";
+  mobile.value = "";
+  email.value = "";
+}
+
+// Cart and products
+function loadPage() {
+  window.location = "./Cart.html";
+}
+
+function reserve() {
+  let username = document.getElementById("namePickup");
+  let mobile = document.getElementById("mobilePickup");
+  let note = document.getElementById("note");
+  let date = document.getElementById("day");
+  let time = document.getElementById("time");
+
+  if (username === "" || note === "" || mobile === "") {
+    error.style.display = "block";
+  } else {
+    alert(
+      `Thank you ${username.value} for your reservation! Kindly Pick up your order according to your reservation.`
+    );
+  }
+  setTimeout(() => {
+    error.style.display = "none";
+  }, 2000);
+
+  username.value = "";
+  note.value = "";
+  mobile.value = "";
 }
